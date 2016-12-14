@@ -3,9 +3,11 @@ package env
 import (
 	"errors"
 	"fmt"
+	"strings"
 )
 
 // errNoEnv is returned when an environment value is missing
-func errNoEnv(key string) error {
-	return errors.New(fmt.Sprintf("%s - Key: %s", ERR_NO_ENV, key))
+func errNoEnv(keys ...string) error {
+	k := strings.Join(keys, " - ")
+	return errors.New(fmt.Sprintf("%s - %s", ERR_NO_ENV, k))
 }

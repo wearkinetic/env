@@ -1,5 +1,5 @@
 package env
 
 const (
-	ERR_NO_ENV = "Missing at least one environment variable"
+	ERR_NO_ENV = "Missing the following environment variables"
 )
