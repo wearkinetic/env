@@ -8,7 +8,7 @@ wraps common environment variables functions and initializers.
 
 ## How to use
 
-```
+```golang
 import "github.com/wearkinetic/env"
 import "log"
 
