@@ -18,4 +18,7 @@ if err != nil{
 }
 
 // Then do some work with parsed
+url1 := parsed["URL1"]
+key := parsed["KEY"]
+// ....
 ```
